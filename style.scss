@@ -4,6 +4,8 @@
 @import './scss/home';
 @import './scss/menu';
 @import './scss/about';
+@import './scss/responsive';
+@import './scss/footer';
 
 body {
     background: $primary;
@@ -21,41 +23,4 @@ h4 {
 a {
     color: $warning;
     text-decoration: none;
-}
-
-footer {
-    @include flexCentre(column);
-    justify-content: center;
-    padding: 3rem 0;
-    font-size: 1rem;
-    position: first;
-    bottom: 0.4rem;
-    right: 1rem;
-    text-align: right;
-    padding: 1rem;
-    color: #fff;
-
-    &.social__network.social__icon {
-        position: fixed;
-        bottom: 1rem;
-        left: 1rem;
-
-        a {
-            padding: 0.4rem;
-
-            &:hover {
-                color: $secondary;
-            }
-        }
-    }
-
-    ul {
-        @include flexCentre(row);
-        list-style: none;
-
-        li {
-            width: 40px;
-            height: 20px * 2;
-        }
-    }
 }

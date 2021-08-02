@@ -334,22 +334,53 @@ header nav button:hover {
   padding: 2rem 4rem 0 4rem;
 }
 
-body {
-  background: #272727;
-  color: #f0c492;
-  height: 100vh;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 400;
-}
-
-a {
-  color: #f0c492;
-  text-decoration: none;
+@media screen and (min-width: 768px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .menu__btn {
+    visibility: hidden;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 5rem;
+    visibility: visible;
+  }
+  header nav .menu__nav {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+    padding-left: 5rem;
+  }
+  header nav .menu__nav_item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  header nav .menu__nav_item_link {
+    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+  header nav button:hover {
+    background: #272727;
+  }
 }
 
 footer {
@@ -407,4 +438,22 @@ footer ul {
 footer ul li {
   width: 40px;
   height: 40px;
+}
+
+body {
+  background: #272727;
+  color: #f0c492;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+a {
+  color: #f0c492;
+  text-decoration: none;
 }
