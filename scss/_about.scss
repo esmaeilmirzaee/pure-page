@@ -1,0 +1,41 @@
+.container {
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: center;
+
+    .job {
+        background-color: lighten($primary, 10%);
+        padding: 1rem;
+        width: 60vw;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+            rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        border-bottom: 1rem solid darken($hot-warning, 10%);
+
+        .job__title {
+            font-weight: 800;
+            font-size: 2rem;
+            color: $secondary;
+            text-decoration: underline;
+            padding-bottom: 1rem;
+        }
+
+        .job__company {
+            font-weight: 100;
+            font-size: 0.75rem;
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                padding: 0.1rem 2rem;
+                font-weight: 200;
+                color: $hot-warning;
+            }
+        }
+
+        p {
+            padding: 2rem 4rem 0 4rem;
+        }
+    }
+}

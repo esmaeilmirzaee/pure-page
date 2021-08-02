@@ -288,8 +288,50 @@ header nav button:hover {
           transition-delay: 0.75s;
 }
 
-body {
-  background-color: #272727;
+.container {
+  padding: 5rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .job {
+  background-color: #414141;
+  padding: 1rem;
+  width: 60vw;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-bottom: 1rem solid #cc5e33;
+}
+
+.container .job .job__title {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #f34567;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
+
+.container .job .job__company {
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+
+.container .job ul {
+  list-style-type: none;
+}
+
+.container .job ul li {
+  padding: 0.1rem 2rem;
+  font-weight: 200;
+  color: #d67e5c;
+}
+
+.container .job p {
+  padding: 2rem 4rem 0 4rem;
 }
 
 body {
