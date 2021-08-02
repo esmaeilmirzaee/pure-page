@@ -1,0 +1,43 @@
+$primary: #272727;
+$secondary: #f34567;
+$success: #234567;
+$warning: #f0c492;
+$hot-warning: #d67e5c;
+$info: #7060eb;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$font-weights: (
+    'light': 100,
+    'regular': 200,
+    'medium': 500,
+    'bold': 800,
+);
+
+$sm: 460px;
+$md: 800px;
+$lg: 960px;
+
+$navSize: 80px;
+
+@mixin flexCentre($direction: column) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-colour($colour) {
+    @if (lightness($colour) > 90%) {
+        @return black;
+    } @else {
+        @return $colour;
+    }
+}
