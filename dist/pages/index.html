@@ -4,31 +4,35 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="dist/css/style.min.css" />
+        <link rel="stylesheet" href="../css/style.min.css" />
         <title>Esmaeil MIRZAEE | Portfolio</title>
     </head>
     <body>
         <header>
+            <div class="menu__btn">
+                <span class="menu__btn_burger"></span>
+            </div>
+            <div class="logo">
+                <img
+                    src="https://avatars.githubusercontent.com/u/8766916?v=4"
+                    alt="Esmaeil's avatar"
+                />
+                <span>Esmaeil MIRZAEE</span>
+            </div>
             <nav>
-                <div class="menu__btn">
-                    <div class="menu__btn_burger"></div>
-                </div>
-                <div class="logo">
-                    <img
-                        src="https://avatars.githubusercontent.com/u/8766916?v=4"
-                        alt="Esmaeil's avatar"
-                    />
-                    <span>Esmaeil MIRZAEE</span>
-                </div>
                 <ul class="menu__nav">
-                    <li class="menu__nav_item">
-                        <a href="/"> Home </a>
+                    <li class="menu__nav_item active">
+                        <a class="menu__nav_item_link" href="/"> Home </a>
                     </li>
                     <li class="menu__nav_item">
-                        <a href="/projects"> Projects </a>
+                        <a class="menu__nav_item_link" href="/projects">
+                            Projects
+                        </a>
                     </li>
                     <li class="menu__nav_item">
-                        <a href="/about"> About </a>
+                        <a class="menu__nav_item_link" href="./about.html">
+                            About
+                        </a>
                     </li>
                 </ul>
                 <div>
@@ -152,6 +156,6 @@
                 </li>
             </ul>
         </footer>
-        <script src="./dist/js/main.js"></script>
+        <script src="../js/main.js"></script>
     </body>
 </html>
